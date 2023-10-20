@@ -1,0 +1,11 @@
+@mixin list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@mixin link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
