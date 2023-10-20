@@ -1,3 +1,8 @@
-body {
-  background-color: tomato;
-}
+// Global
+@import "global/fonts.scss";
+@import "global/global.scss";
+@import "global/variables.scss";
+@import "global/mixins.scss";
+
+//Blocks
+@import "blocks/page.scss"
