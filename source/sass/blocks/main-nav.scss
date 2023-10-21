@@ -1,0 +1,15 @@
+.main-nav__list {
+  @include list;
+  text-align: center;
+}
+
+.main-nav__item {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.main-nav__link {
+  @include link;
+}
