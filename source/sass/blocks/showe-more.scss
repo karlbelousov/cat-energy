@@ -1,0 +1,24 @@
+.showe-more__link {
+  @include link;
+}
+
+.showe-more__title {
+  font-style: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.showe-more__text {
+  color: $special-dark-grey;
+  font-family: "Arial";
+  font-style: 12px;
+  line-height: 16px;
+}
+
+.showe-more__button {
+  @include link;
+  color: $special-dark-grey;
+  font-style: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}

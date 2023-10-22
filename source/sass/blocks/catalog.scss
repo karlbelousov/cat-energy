@@ -1,0 +1,9 @@
+.catalog__title {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.catalog__list {
+  @include list;
+}

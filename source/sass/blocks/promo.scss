@@ -33,4 +33,6 @@
 
 .promo__button {
   @include link;
+  font-size: 14px;
+  line-height: 18px;
 }

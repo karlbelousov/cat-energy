@@ -1,0 +1,19 @@
+.product-card__link {
+  @include link;
+}
+
+.product-card__heading {
+  color: $special-dark-grey-2;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.product-card__list {
+  margin: 0;
+  color: $special-dark-grey;
+  font-family: "Arial";
+  font-size: 12px;
+  line-height: 16px;
+}
