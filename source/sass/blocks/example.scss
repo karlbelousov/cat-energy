@@ -1,0 +1,37 @@
+.example {
+  background-color: $example-bg;
+}
+
+.example__heading {
+  color: $basic-black;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.example__text {
+  font-family: "Arial";
+  color: $special-dark-grey;
+}
+
+.example__item {
+  text-align: center;
+}
+
+.example__title {
+  font-family: "Arial";
+  font-size: 12px;
+  line-height: 12px;
+  color: $special-dark-grey;
+}
+
+.example__description {
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.example__expenses {
+  line-height: 20px;
+  text-transform: uppercase;
+}

@@ -1,6 +1,5 @@
 .catalog-section__item {
   background-color: $basic-grey;
-  color: $special-dark-grey;
 }
 
 .catalog-section__title {
@@ -8,6 +7,11 @@
   font-weight: 400;
   line-height: 37px;
   text-transform: uppercase;
+}
+
+.catalog-section__text {
+  font-family: "Arial";
+  color: $special-dark-grey;
 }
 
 .catalog-section__link {

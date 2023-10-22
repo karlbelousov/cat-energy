@@ -1,0 +1,12 @@
+.process__title {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  color: $basic-black;
+}
+
+.process__list {
+  @include list;
+  color: $special-dark-grey;
+  font-family: "Arial";
+}
