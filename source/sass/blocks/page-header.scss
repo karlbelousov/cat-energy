@@ -1,7 +1,15 @@
 .page-header {
-  max-width: 100%;
-}
+  min-width: 320px;
+  padding: 10px 20px 17px;
 
-.page-header__nav {
-max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding: 24px 30px 0;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding: 53px 55px 0;
+  }
 }

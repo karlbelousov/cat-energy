@@ -1,6 +1,17 @@
 .main-nav__list {
   @include list;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 440px;
+  }
+
+  @media (min-width: $desctop-width) {
+    width: 478px;
+  }
 }
 
 .main-nav__item {
@@ -12,4 +23,10 @@
 
 .main-nav__link {
   @include link;
+}
+
+.main-nav__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
