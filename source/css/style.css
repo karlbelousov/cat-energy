@@ -297,6 +297,7 @@ img {
 
 .showe-more__title {
   font-style: 16px;
+  font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
 }
@@ -312,9 +313,42 @@ img {
   display: block;
   color: inherit;
   text-decoration: none;
+  background-color: #F2F2F2;
   color: #444444;
   font-style: 16px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.additional-product__heading {
+  font-style: 24px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.additional-product__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.additional-card__title {
+  color: #222;
+  font-style: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.additional-card__list {
+  color: #444444;
+  font-family: "Arial";
+  line-height: 1;
+}
+
+.offer {
+  background-color: rgba(104, 183, 56, 0.85);
+  background-image: url("../../img/offer-img.png");
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=style.css.map */
