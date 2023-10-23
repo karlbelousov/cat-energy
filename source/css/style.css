@@ -222,6 +222,10 @@ img {
   cursor: pointer;
 }
 
+.contacts {
+  background-color: #F2F2F2;
+}
+
 .contacts__heading {
   color: #111111;
   font-size: 16px;
@@ -350,5 +354,41 @@ img {
   background-color: rgba(104, 183, 56, 0.85);
   background-image: url("../../img/offer-img.png");
   color: #FFFFFF;
+}
+
+.programm-selection__title {
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.programm-selection__subtitle {
+  text-transform: uppercase;
+}
+
+.form {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__title {
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.form__legend {
+  font-family: "Arial";
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: none;
+}
+
+.field {
+  color: #444444;
+}
+
+.control--radio {
+  color: #222;
 }
 /*# sourceMappingURL=style.css.map */
