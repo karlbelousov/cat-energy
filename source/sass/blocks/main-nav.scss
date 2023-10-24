@@ -6,11 +6,11 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
-    width: 440px;
+    min-width: 440px;
   }
 
   @media (min-width: $desctop-width) {
-    width: 478px;
+    min-width: 478px;
   }
 }
 

@@ -19,6 +19,7 @@
 }
 
 img {
+  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -53,19 +54,30 @@ img {
 
 .page-header {
   min-width: 320px;
+  margin: 0 auto;
   padding: 10px 20px 17px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 @media (min-width: 768px) {
   .page-header {
+    min-width: 708px;
+    margin: 0 auto;
     padding: 24px 30px 0;
   }
 }
 @media (min-width: 1330px) {
   .page-header {
+    min-width: 1220px;
+    margin: 0 auto;
     padding: 53px 55px 0;
   }
+}
+
+.page-header__logo {
+  display: flex;
+  justify-content: space-between;
 }
 
 .main-nav__list {
@@ -79,12 +91,12 @@ img {
   .main-nav__list {
     flex-direction: row;
     flex-wrap: wrap;
-    width: 440px;
+    min-width: 440px;
   }
 }
 @media (min-width: 1330px) {
   .main-nav__list {
-    width: 478px;
+    min-width: 478px;
   }
 }
 
