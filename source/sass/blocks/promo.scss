@@ -1,11 +1,37 @@
 .promo {
+  min-width: 320px;
   color: $basic-white;
   background-color: $basic-green;
   background-image: url("../../img/promo-bg.png");
+
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+    padding: 0 30px;
+    color: $basic-black;
+    background-color: $basic-white;
+    background-image: none;
+  }
+
+  @media (min-width: $desctop-width) {
+    min-width: 1440px;
+    padding: 0 110px;
+  }
+
 }
 
 .promo__wrapper {
-  text-align: center;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    padding-left: 88px;
+  }
+
+  @media (min-width: $desctop-width) {
+    width: 1220px;
+    padding-left: 80px;
+  }
 }
 
 .promo__title {
@@ -26,4 +52,8 @@
   @include link;
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    width: 244px;
+  }
 }
