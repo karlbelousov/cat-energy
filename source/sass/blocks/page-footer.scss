@@ -2,3 +2,27 @@
   background-color: $basic-grey;
   color: $special-dark-grey;
 }
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+   flex-direction: row;
+   justify-content: space-between;
+  }
+}
+
+.page-footer__logo {
+  align-self: center;
+}
+
+.page-footer__social {
+  align-self: center;
+  display: flex;
+}
+
+.page-footer__developer {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,18 +1,3 @@
-.process {
-  width: 320px;
-  padding: 0 20px;
-  margin: 0 auto;
-  @media (min-width: $tablet-width) {
-    width: 768px;
-    padding: 0 30px;
-  }
-
-  @media (min-width: $desctop-width) {
-    width: 1440px;
-    padding: 0 110px;
-  }
-}
-
 .process__title {
   font-size: 36px;
   line-height: 40px;

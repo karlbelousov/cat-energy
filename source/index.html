@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body  class="page__body">
-    <header class="page__header page-header">
+    <header class="page__header page-header container">
       <a class="page-header__logo logo">
         <img class="logo__image" src="img/logo-image.svg" width="34" height="38" alt="Cat Energy">
         <img class="logo__sign" src="img/catenergy.svg" width="101" height="19" alt="">
@@ -31,14 +31,14 @@
     </header>
     <main class="page__main page-main">
       <section class="promo">
-        <div class="promo__wrapper">
+        <div class="promo__wrapper container">
           <h1 class="promo__title">Функциональное питание для котов</h1>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
           <img class="promo__image" src="img/promo-img.png" width="280" height="270" alt="Банка корма для котов со вкусом курицы Cat Energy Pro на 500 грамм">
           <a class="promo__button button" href="form.html">Подобрать программу</a>
         </div>
       </section>
-      <section class="catalog-section">
+      <section class="catalog-section container">
         <h2 class="visually-hidden">Разделы каталога</h2>
         <article class="catalog-section__item catalog-section__item--cat-slim">
           <h3 class="catalog-section__title">Похудение</h3>
@@ -55,7 +55,7 @@
           <a class="catalog-section__link" href="catalog.html">Каталог pro</a>
         </article>
       </section>
-      <section class="process">
+      <section class="process container">
         <h2 class="process__title">Как это работает</h2>
         <ol class="process__list">
           <li class="process__item process__item--leaf">
@@ -74,7 +74,7 @@
       </section>
 
       <section class="example">
-        <div class="example__wrapper">
+        <div class="example__wrapper container">
           <div class="example__content">
             <h2 class="example__heading">Живой пример</h2>
             <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
@@ -108,7 +108,7 @@
 
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__wrapper">
+        <div class="contacts__wrapper container">
           <p class="contacts__heading">приглашаем к сотрудничеству дилеров!</p>
           <p class="contacts__address">
             <span>ул. Большая Конюшенная, д. 19/8</span>
@@ -119,38 +119,40 @@
       </section>
     </main>
     <footer class="page__footer page-footer">
-      <a class="page-footer__logo logo">
-        <img class="logo__image" src="img/footer-logo.svg" width="128" height="24" alt="Cat Energy">
-      </a>
-      <ul class="page-footer__social social-list">
-        <li class="social-list__item">
-          <a class="social-list__link" href="#">
-            <span class="visually-hidden">В Контакте</span>
-            <img class="social-list__icon" src="img/icon_vkontakte.svg" width="23" height="16" alt="В Контакте">
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="#">
-            <span class="visually-hidden">Инстаграмм</span>
-            <img class="social-list__icon" src="img/icon_instagram.svg" width="16" height="16" alt="Инстаграмм">
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="#">
-            <span class="visually-hidden">Facebook</span>
-            <img class="social-list__icon" src="img/icon_facebook.svg" width="22" height="22" alt="Facebook">
-          </a>
-        </li>
-      </ul>
-      <p class="page-footer__developer developer">
-        <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="visually-hidden">Разработано в</span>
-          HTML Academy
+      <div class="page-footer__wrapper container">
+        <a class="page-footer__logo logo">
+          <img class="logo__image" src="img/footer-logo.svg" width="128" height="24" alt="Cat Energy">
         </a>
-        <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="developer__image" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
-        </a>
-      </p>
+        <ul class="page-footer__social social-list">
+          <li class="social-list__item">
+            <a class="social-list__link" href="#">
+              <span class="visually-hidden">В Контакте</span>
+              <img class="social-list__icon" src="img/icon_vkontakte.svg" width="23" height="16" alt="В Контакте">
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="#">
+              <span class="visually-hidden">Инстаграмм</span>
+              <img class="social-list__icon" src="img/icon_instagram.svg" width="16" height="16" alt="Инстаграмм">
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="#">
+              <span class="visually-hidden">Facebook</span>
+              <img class="social-list__icon" src="img/icon_facebook.svg" width="22" height="22" alt="Facebook">
+            </a>
+          </li>
+        </ul>
+        <p class="page-footer__developer developer">
+          <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">Разработано в</span>
+            HTML Academy
+          </a>
+          <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="developer__image" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+          </a>
+        </p>
+      </div>
     </footer>
   </body>
 </html>

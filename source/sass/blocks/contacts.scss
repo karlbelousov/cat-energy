@@ -1,5 +1,6 @@
-.contacts {
-  background-color: $basic-grey;
+.contacts__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .contacts__heading {
