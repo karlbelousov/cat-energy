@@ -2,6 +2,26 @@
   background-color: $example-bg;
 }
 
+.example__wrapper {
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desctop-width) {
+    width: 1440px;
+    padding: 0 110px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 194px;
+  }
+}
+
 .example__heading {
   color: $basic-black;
   font-size: 36px;
