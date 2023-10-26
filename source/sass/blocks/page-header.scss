@@ -1,5 +1,5 @@
 .page-header {
-  min-width: 320px;
+  width: 320px;
   margin: 0 auto;
   padding: 0 20px;
 
@@ -7,13 +7,13 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    min-width: 768px;
+    width: 768px;
     margin: 0 auto;
     padding: 0 30px;
   }
 
   @media (min-width: $desctop-width) {
-    min-width: 1440px;
+    width: 1440px;
     margin: 0 auto;
     padding: 0 110px;
   }
@@ -22,8 +22,6 @@
 .page-header__logo {
   display: flex;
   justify-content: space-between;
-
-  // width: 190px;
 
   // @media (min-width: $tablet-width) {
   //   width: 174px;

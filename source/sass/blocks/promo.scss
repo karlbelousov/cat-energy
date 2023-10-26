@@ -1,26 +1,23 @@
 .promo {
-  min-width: 320px;
   padding: 0 20px;
   color: $basic-white;
   background-color: $basic-green;
   background-image: url("../../img/promo-bg.png");
 
   @media (min-width: $tablet-width) {
-    min-width: 768px;
     padding: 0 30px;
     color: $basic-black;
     background-color: $basic-white;
   }
 
   @media (min-width: $desctop-width) {
-    min-width: 1440px;
     padding: 0 110px;
   }
-
 }
 
 .promo__wrapper {
   width: 320px;
+  padding: 0 20px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
