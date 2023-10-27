@@ -419,6 +419,34 @@ img {
   padding: 0;
   list-style-type: none;
 }
+@media (min-width: 768px) {
+  .catalog__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 68px 60px;
+  }
+}
+@media (min-width: 1220px) {
+  .catalog__list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 62px 80px;
+  }
+}
+
+.product-card {
+  width: 280px;
+}
+@media (min-width: 768px) {
+  .product-card {
+    width: 324px;
+    background-color: #F2F2F2;
+  }
+}
+@media (min-width: 1220px) {
+  .product-card {
+    width: 245px;
+  }
+}
 
 .product-card__link {
   display: block;

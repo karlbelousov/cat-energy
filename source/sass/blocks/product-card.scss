@@ -1,3 +1,16 @@
+.product-card {
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    background-color: $basic-grey;
+  }
+
+  @media (min-width: $desctop-width) {
+    width: 245px;
+  }
+}
+
 .product-card__link {
   @include link;
 }
