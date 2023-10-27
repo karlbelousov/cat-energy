@@ -196,18 +196,19 @@
     </div>
     </section>
 
-    <section class="additional-product">
+    <section class="additional-product container">
       <h2 class="additional-product__heading">Дополнительные товары</h2>
-      <ul class="additional-product__list">
-        <li class="additional-product__item additional-card">
-          <h3 class="additional-card__title">Сахарозаменитель</h3>
-          <dl class="additional-card__list">
-            <dt class="visually-hidden">Объём</dt>
-            <dd class="additional-card__volume">1 упаковка (100 г)</dd>
-            <dt class="visually-hidden">Цена</dt>
-            <dd class="additional-card__price">200 Р.</dd>
-          </dl>
-          <button class="additional-card__button button" type="button">заказать</button>
+      <div class="additional-product__wrapper">
+        <ul class="additional-product__list">
+          <li class="additional-product__item additional-card">
+            <h3 class="additional-card__title">Сахарозаменитель</h3>
+            <dl class="additional-card__list">
+              <dt class="visually-hidden">Объём</dt>
+              <dd class="additional-card__volume">1 упаковка (100 г)</dd>
+              <dt class="visually-hidden">Цена</dt>
+              <dd class="additional-card__price">200 Р.</dd>
+            </dl>
+            <button class="additional-card__button button" type="button">заказать</button>
         </li>
         <li class="additional-product__item additional-card">
           <h3 class="additional-card__title">питьевая вода</h3>
@@ -239,17 +240,23 @@
           </dl>
           <button class="additional-card__button button" type="button">заказать</button>
         </li>
-      </ul>
-      <div class="additional-products__promo offer">
-        <h2 class="visually-hidden">Специальное предложение</h2>
-        <p class="offer__text">Закажите все и получите чехол для кота в подарок!</p>
+        </ul>
+        <div class="additional-products__promo offer">
+          <h2 class="visually-hidden">Специальное предложение</h2>
+          <p class="offer__text">Закажите все и получите чехол для кота в подарок!</p>
+        </div>
       </div>
     </section>
 
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <p class="contacts__heading">приглашаем к сотрудничеству дилеров!</p>
-      <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="contacts__wrapper container">
+        <p class="contacts__heading">приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__address">
+          <span>ул. Большая Конюшенная, д. 19/8</span>
+          <span>Санкт-Петербург</span>
+        </p>
+      </div>
       <img class="contacts__image" src="img/map.png" width="320" height="362" alt="Карта расположения нашего офиса">
     </section>
   </main>

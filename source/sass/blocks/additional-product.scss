@@ -1,3 +1,11 @@
+.additional-product__wrapper {
+  @media (min-width: $desctop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+  }
+}
+
 .additional-product__heading {
   font-style: 24px;
   font-weight: 400;
@@ -6,4 +14,5 @@
 
 .additional-product__list {
   @include list;
+  grid-column: 1 / 4;
 }
