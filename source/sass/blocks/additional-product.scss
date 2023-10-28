@@ -14,5 +14,13 @@
 
 .additional-product__list {
   @include list;
-  grid-column: 1 / 4;
+  min-width: 320px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 708px;
+  }
+
+  @media (min-width: $desctop-width) {
+    grid-column: 1 / 4;
+  }
 }

@@ -1,13 +1,13 @@
 .product-card {
-  width: 280px;
+  min-width: 280px;
 
   @media (min-width: $tablet-width) {
-    width: 324px;
+    min-width: 324px;
     background-color: $basic-grey;
   }
 
   @media (min-width: $desctop-width) {
-    width: 245px;
+    min-width: 245px;
   }
 }
 

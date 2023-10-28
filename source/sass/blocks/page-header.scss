@@ -1,6 +1,6 @@
 .page-header__nav {
   @media (min-width: $tablet-width) {
-    width: 768px;
+    min-width: 768px;
     padding: 0 30px;
     margin: 0 auto;
     display: flex;
@@ -8,14 +8,14 @@
   }
 
   @media (min-width: $desctop-width) {
-    width: 1440px;
+    min-width: 1440px;
     padding: 0 110px;
   }
 }
 
 .page-header__bar {
   @media (max-width: $tablet-width) {
-    width: 320px;
+    min-width: 320px;
     margin: 0 auto;
     padding: 0 20px;
     display: flex;

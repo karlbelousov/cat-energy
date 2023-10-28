@@ -9,18 +9,16 @@
   @include list;
   color: $special-dark-grey;
   font-family: "Arial";
-  width: 280px;
+  width: auto;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 37px 137px;
   }
 
   @media (min-width: $desctop-width){
-    width: 1220px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     gap: 95px;
   }
 }
@@ -29,6 +27,6 @@
   width: auto;
 
   @media (min-width: $tablet-width) {
-    max-width: 250px;
+    min-width: 250px;
   }
 }

@@ -15,13 +15,14 @@
 }
 
 .promo__wrapper {
+  text-align: center;
+
   @media (min-width: $tablet-width) {
-    width: 708px;
+    text-align: left;
     padding-left: 88px;
   }
 
   @media (min-width: $desctop-width) {
-    width: 1220px;
     padding-left: 80px;
   }
 }

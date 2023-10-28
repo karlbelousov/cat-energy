@@ -8,14 +8,14 @@
 
 .catalog-section__item {
   background-color: $basic-grey;
-  width: 280px;
+  width: auto;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
+    width: auto;
   }
 
   @media (min-width: $desctop-width) {
-    width: 570px;
+    min-width: 570px;
   }
 }
 
