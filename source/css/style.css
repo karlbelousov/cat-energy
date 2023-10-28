@@ -569,10 +569,21 @@ img {
   line-height: 18px;
   text-transform: uppercase;
 }
+@media (min-width: 768px) {
+  .form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 61px;
+  }
+}
+@media (min-width: 1220px) {
+  .form {
+    column-gap: 81px;
+  }
+}
 
-.form__title {
-  font-size: 24px;
-  line-height: 26px;
+.form__fieldset {
+  grid-column: 1/-1;
 }
 
 .form__legend {
@@ -588,5 +599,35 @@ img {
 
 .control--radio {
   color: #222;
+}
+
+@media (min-width: 1220px) {
+  .field-group--cat-data {
+    grid-column: 1/2;
+  }
+}
+@media (min-width: 1220px) {
+  .field-group--target {
+    grid-column: 2/-1;
+  }
+}
+
+.field-group__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+@media (min-width: 768px) {
+  .field-group__list--additional {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 61px;
+  }
+}
+@media (min-width: 1220px) {
+  .field-group__list--additional {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 105px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

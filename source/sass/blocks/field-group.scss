@@ -1,0 +1,30 @@
+.field-group {
+  &--cat-data {
+    @media (min-width: $desctop-width) {
+      grid-column: 1 / 2;
+    }
+  }
+
+  &--target {
+    @media (min-width: $desctop-width) {
+      grid-column: 2 / -1;
+    }
+  }
+}
+
+.field-group__list {
+  @include list;
+
+  &--additional {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 61px;
+    }
+
+    @media (min-width: $desctop-width) {
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 105px;
+    }
+  }
+}
