@@ -8,7 +8,7 @@
   </head>
   <body  class="page__body">
     <header class="page__header page-header">
-      <nav class="page-header__nav">
+      <nav class="page-header__nav page-header__nav--closed">
         <div class="page-header__bar">
           <a class="page-header__logo logo">
             <img class="logo__image" src="img/logo-image.svg" width="34" height="38" alt="Cat Energy">
@@ -19,8 +19,8 @@
           </button>
         </div>
         <ul class="page-header__menu main-nav">
-          <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__link">Главная</a>
+          <li class="main-nav__item ">
+            <a class="main-nav__link main-nav__link--current" href="#">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
@@ -32,8 +32,8 @@
       </nav>
     </header>
     <main class="page__main page-main">
-      <section class="promo container">
-        <div class="promo__wrapper">
+      <section class="promo">
+        <div class="promo__wrapper container">
           <h1 class="promo__title">Функциональное питание для котов</h1>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
           <img class="promo__image" src="img/promo-img.png" width="280" height="270" alt="Банка корма для котов со вкусом курицы Cat Energy Pro на 500 грамм">
@@ -158,5 +158,7 @@
         </p>
       </div>
     </footer>
+
+    <script src="js/app.js"></script>
   </body>
 </html>

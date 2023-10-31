@@ -8,6 +8,7 @@
   @include list;
 
   @media (min-width: $tablet-width) {
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 68px 60px;
@@ -16,5 +17,18 @@
   @media (min-width: $desctop-width) {
     grid-template-columns: repeat(4, 1fr);
     gap: 62px 80px;
+  }
+}
+
+
+.catalog__item {
+  min-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+  }
+
+  @media (min-width: $desctop-width) {
+    width: 245px;
   }
 }
