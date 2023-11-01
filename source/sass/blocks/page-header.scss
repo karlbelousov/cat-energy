@@ -1,5 +1,5 @@
 .page-header__bar {
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-only) {
     min-width: 320px;
     margin: 0 auto;
     padding: 20px;
@@ -10,7 +10,7 @@
 }
 
 .page-header__nav {
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-only) {
     &--closed .page-header__menu {
       display: none;
     }

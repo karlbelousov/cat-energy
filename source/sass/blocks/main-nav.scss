@@ -3,10 +3,11 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
     min-width: 440px;
-    gap: 35px;
+    gap: 30px;
   }
 
   @media (min-width: $desctop-width) {
@@ -34,6 +35,7 @@
   @media (min-width: $desctop-width) {
     font-size: 20px;
     line-height: normal;
+    color: $basic-white;
   }
 }
 
@@ -53,13 +55,13 @@
         bottom: 0;
         height: 2px;
         background-color: $basic-green;
+
+        @media (min-width: $desctop-width) {
+          background-color: $basic-white;
+        }
       }
     }
     padding: 12px;
-
-    @media (min-width: $desctop-width) {
-      padding: 20px;
-    }
   }
 
   &:hover {
