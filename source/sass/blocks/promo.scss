@@ -3,7 +3,8 @@
     color: $basic-white;
     margin-bottom: 20px;
     background-color: $special-green;
-    background-image: url("../../img/promo-small.png"), linear-gradient($basic-green 0, $basic-green 302px, $basic-white 302px);
+    background-image: url("../img/promo-small.png"),
+                      linear-gradient($basic-green 0, $basic-green 302px, $basic-white 302px);
     background-repeat: no-repeat;
     background-position: 50% 0;
   }
@@ -26,9 +27,9 @@
       left: 50%;
       bottom: 0;
       background-color: $special-green;
-      background-image: url("../../img/promo-large.jpg");
+      background-image: url("../img/promo-large.jpg");
       background-repeat: no-repeat;
-      background-position: 20% 8%;
+      background-position: 0% 0%;
       background-size: cover;
     }
   }

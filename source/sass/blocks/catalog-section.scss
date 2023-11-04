@@ -38,6 +38,7 @@
     left: 22px;
     width: 50px;
     height: 50px;
+    z-index: 2;
     border-radius: 50%;
     background-color: $basic-green;
 
@@ -64,8 +65,9 @@
     left: 29px;
     width: 36px;
     height: 50px;
+    z-index: 5;
     background-repeat: no-repeat;
-    background-image: url('../../img/cat-slim.svg');
+    background-image: url('../img/cat-slim.svg');
 
     @media (min-width: $tablet-width) {
       top: 81px;
@@ -91,8 +93,9 @@
     left: 13px;
     width: 67px;
     height: 28px;
+    z-index: 5;
     background-repeat: no-repeat;
-    background-image: url('../../img/cat-pro.svg');
+    background-image: url('../img/cat-pro.svg');
 
     @media (min-width: $tablet-width) {
       top: 135px;
@@ -168,7 +171,7 @@
     right: 0;
     top: 50%;
     transform: translateY(-5px);
-    background-image: url('../../img/arrow.svg');
+    background-image: url('../img/arrow.svg');
     background-repeat: no-repeat;
     background-position: 100% 50%;
     width: 32px;
@@ -186,7 +189,7 @@
   }
 
   &:hover:after {
-    background-image: url('../../img/arrow-hover.svg');
+    background-image: url('../img/arrow-hover.svg');
   }
 
   &:active,

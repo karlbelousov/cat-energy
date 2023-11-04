@@ -3,10 +3,9 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
   }
 
   @media (min-width: $desctop-width) {

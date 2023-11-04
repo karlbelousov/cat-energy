@@ -10,4 +10,8 @@
   background-color: $basic-green;
   text-transform: uppercase;
   cursor: pointer;
+
+  &:active {
+    color: rgba($basic-white, .3)
+  }
 }
