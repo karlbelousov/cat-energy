@@ -21,16 +21,16 @@ img {
 }
 .container {
   margin: 0 auto;
-  min-width: 320px;
+  width: 320px;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
+    width: 768px;
     padding: 0 30px;
   }
 
   @media (min-width: $desctop-width) {
-    max-width: 1330px;
-    padding: 0 55px;
+    width: 1440px;
+    padding: 0 110px;
   }
 }
