@@ -3,4 +3,18 @@
   font-family: "Arial";
   font-size: 16px;
   line-height: normal;
+
+  &:hover {
+    .developer__icon {
+      stroke: $basic-green;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    .developer__icon {
+      opacity: 0.3;
+    }
+  }
 }

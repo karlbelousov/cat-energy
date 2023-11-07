@@ -1,3 +1,16 @@
 .social-list {
-  @include list();
+  margin: 0;
+  list-style-type: none;
+}
+
+.social-list__link {
+  padding: 8px;
+
+  &:hover {
+    color: $basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

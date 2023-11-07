@@ -9,7 +9,7 @@ img {
   height: auto;
 }
 
-.visually-hidden{
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -30,7 +30,7 @@ img {
   }
 
   @media (min-width: $desctop-width) {
-    width: 1440px;
-    padding: 0 110px;
+    width: 1330px;
+    padding: 0 55px;
   }
 }
