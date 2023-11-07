@@ -157,20 +157,18 @@
 }
 
 .catalog-section__link {
-  position: relative;
   color: $basic-black;
   text-decoration: none;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  padding-right: 49px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 17px;
+  align-items: center;
 
   &::after {
-    position: absolute;
     content: '';
-    right: 0;
-    top: 50%;
-    transform: translateY(-5px);
     background-image: url('../img/arrow.svg');
     background-repeat: no-repeat;
     background-position: 100% 50%;
@@ -181,11 +179,11 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: normal;
-    padding-right: 57px;
+    gap: 25px;
   }
 
   @media (min-width: $desctop-width) {
-    padding-right: 60px;
+    gap: 28px;
   }
 
   &:hover:after {
