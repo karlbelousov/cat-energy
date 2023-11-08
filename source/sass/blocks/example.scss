@@ -4,7 +4,7 @@
   padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    border-top: 1px solid #E6E6E6;
+    border-top: 1px solid #e6e6e6;
     padding-top: 43px;
     padding-bottom: 55px;
     background-color: transparent;
@@ -16,7 +16,6 @@
     border-top: 0;
     padding-top: 0;
     background-image: linear-gradient($basic-white 179px, $example-bg 179px);
-
   }
 }
 
@@ -113,9 +112,9 @@
   font-family: "Arial";
   font-size: 12px;
   line-height: 1;
-  color:  $special-dark-grey;
+  color: $special-dark-grey;
   order: 2;
-  margin-bottom: -12px;
+  margin-bottom: -10px;
   width: 77px;
   padding: 0 4px;
   background-color: $example-bg;
@@ -123,8 +122,9 @@
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 1;
-    margin-bottom: -20px;
-    padding: 0 7px;
+    width: auto;
+    margin-bottom: -8px;
+    padding: 0 4px;
     background-color: $basic-white;
   }
 
@@ -143,7 +143,7 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
-    margin-bottom: 20px;
+    margin-bottom: 11px;
   }
 }
 
@@ -194,11 +194,11 @@
 }
 
 .example__image {
-    display: none;
+  display: none;
 
-    &--active {
-      display: block;
-    }
+  &--active {
+    display: block;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;

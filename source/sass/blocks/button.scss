@@ -1,6 +1,7 @@
 .button {
   display: inline-block;
   border: 0;
+  padding: 12px;
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
@@ -9,9 +10,10 @@
   color: $basic-white;
   background-color: $basic-green;
   text-transform: uppercase;
+  text-decoration: none;
   cursor: pointer;
 
   &:active {
-    color: rgba($basic-white, .3)
+    color: rgba($basic-white, 0.3);
   }
 }

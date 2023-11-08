@@ -4,7 +4,7 @@
     margin-bottom: 20px;
     background-color: $special-green;
     background-image: url("../img/promo-small.png"),
-                      linear-gradient($basic-green 0, $basic-green 302px, $basic-white 302px);
+      linear-gradient($basic-green 0, $basic-green 302px, $basic-white 302px);
     background-repeat: no-repeat;
     background-position: 50% 0;
   }
@@ -21,7 +21,7 @@
     &::before {
       position: absolute;
       z-index: -2;
-      content: '';
+      content: "";
       top: -200px;
       right: 0;
       left: 50%;
@@ -43,12 +43,12 @@
   @media (min-width: $tablet-width) {
     text-align: left;
     padding-top: 62px;
-    padding-left: 117px;
+    padding-left: 87px;
     padding-bottom: 526px;
   }
 
   @media (min-width: $desctop-width) {
-    padding-left: 190px;
+    padding-left: 80px;
     padding-right: 610px;
     padding-top: 82px;
     padding-bottom: 185px;
@@ -111,7 +111,6 @@
 }
 
 .promo__button {
-  @include link;
   width: 100%;
   font-size: 14px;
   line-height: 18px;
