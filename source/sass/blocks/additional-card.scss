@@ -1,13 +1,108 @@
+.additional-card {
+  border-top: 1px solid $special-grey;
+  padding: 13px 0 19px;
+  display: grid;
+  align-items: center;
+
+  &:last-child {
+    border-bottom: 1px solid $special-grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 28px;
+    grid-template-columns: 1fr 1fr;
+
+    &:first-child {
+      border-top: 0;
+    }
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  @media (min-width: $desctop-width) {
+    padding: 15px 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 80px;
+
+    &:first-child {
+      border-top: 1px solid $special-grey;
+    }
+
+    &:last-child {
+      border-bottom: 1px solid $special-grey;
+    }
+  }
+}
+
 .additional-card__title {
   color: $special-dark-grey-2;
-  font-style: 16px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 16px;
+  line-height: 1;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 0;
+    grid-column: 1 / 2;
+  }
 }
 
 .additional-card__list {
   color: $special-dark-grey;
   font-family: "Arial";
   line-height: 1;
+  margin: 0;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    line-height: 20px;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desctop-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    grid-column: 2 / 3;
+  }
+}
+
+.additional-card__volume,
+.additional-card__price {
+  margin: 0;
+}
+
+.additional-card__volume {
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
+
+  @media (min-width: $desctop-width) {
+    text-align: left;
+  }
+}
+
+.additional-card__price {
+  text-align: right;
+}
+
+.additional-card__button {
+  grid-column: 1 / -1;
+
+  @media (min-width: $desctop-width) {
+    grid-column: 3 / -1;
+  }
 }
