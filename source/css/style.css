@@ -1897,12 +1897,32 @@ img {
   line-height: 18px;
   color: #444444;
   border: 1px solid #e7e7e7;
+  cursor: pointer;
+}
+.field__input:hover {
+  border: 1px solid #cdcdcd;
+}
+.field__input:focus {
+  border: 2px solid #444444;
+}
+.field__input:not(:placeholder-shown):invalid {
+  border: 2px solid #FF8282;
+}
+.field__input:not(:placeholder-shown):invalid + .field__input--icon {
+  color: #FF8282;
+}
+.field__input--icon:focus + .field__icon {
+  color: #68b738;
+  stroke: #68b738;
 }
 @media (min-width: 768px) {
   .field__input {
     font-size: 20px;
     line-height: normal;
   }
+}
+.field__input--error {
+  border: 1px solid #FF8282;
 }
 
 .field__input::placeholder {
@@ -1942,6 +1962,26 @@ img {
   border-radius: 50%;
 }
 
+.control__lead {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  align-items: center;
+  gap: 0 16px;
+  grid-column: 1/-1;
+  grid-row: 1/2;
+}
+.control__lead::before, .control__lead::after {
+  position: relative;
+  content: "";
+  width: 30px;
+  height: 30px;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.control__lead::before {
+  border: 1px solid #cdcdcd;
+}
+
 .control__input {
   position: relative;
   z-index: 1;
@@ -1965,26 +2005,6 @@ img {
   background-image: url("../img/check.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
-}
-
-.control__lead {
-  display: grid;
-  grid-template-columns: 30px 1fr;
-  align-items: center;
-  gap: 0 16px;
-  grid-column: 1/-1;
-  grid-row: 1/2;
-}
-.control__lead::before, .control__lead::after {
-  position: relative;
-  content: "";
-  width: 30px;
-  height: 30px;
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-.control__lead::before {
-  border: 1px solid #cdcdcd;
 }
 
 .field-group {

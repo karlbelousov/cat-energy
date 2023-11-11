@@ -26,10 +26,36 @@
   line-height: 18px;
   color: $special-dark-grey;
   border: 1px solid $special-grey-5;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid $special-grey;
+  }
+
+  &:focus {
+    border: 2px solid $special-dark-grey;
+  }
+
+  &:not(:placeholder-shown):invalid {
+    border: 2px solid $status-error;
+  }
+
+  &:not(:placeholder-shown):invalid + &--icon {
+    color: $status-error;
+  }
+
+  &--icon:focus + .field__icon {
+    color: $basic-green;
+    stroke: $basic-green;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: normal;
+  }
+
+  &--error {
+    border: 1px solid $status-error;
   }
 }
 
