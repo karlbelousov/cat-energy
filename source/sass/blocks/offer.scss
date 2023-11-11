@@ -1,42 +1,21 @@
 .offer {
-  position: relative;
   background-color: $special-green;
-  background-image: url("../img/offer-img.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
+  background-image: url("../img/offer-icon.svg"), url("../img/offer-img.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 80px 80px, cover;
+  background-position: center 59px, 50% 50%;
 
   color: $basic-white;
   padding: 167px 0 43px;
 
-  &::before {
-    position: absolute;
-    content: "";
-    width: 80px;
-    height: 80px;
-    top: 59px;
-    left: 101px;
-    background-image: url("../img/offer-icon.svg");
-  }
-
   @media (min-width: $tablet-width) {
     padding: 70px 124px 70px 422px;
-    background-position: 50% 60%;
+    background-position: 77px center, 50% 60%;
+  }
 
-    &::before {
-      top: 57px;
-      left: 77px;
-    }
-
-    @media (min-width: $desctop-width) {
-      padding: 184px 0 42px;
-      background-position: 50% 50%;
-
-      &::before {
-        top: 55px;
-        left: 83px;
-      }
-    }
+  @media (min-width: $desctop-width) {
+    padding: 184px 0 42px;
+    background-position: center 55px, 50% 50%;
   }
 }
 

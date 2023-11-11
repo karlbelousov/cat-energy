@@ -1,12 +1,13 @@
 .form {
   font-size: 16px;
   line-height: 18px;
-  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 61px;
+    column-gap: 60px;
   }
 
   @media (min-width: $desctop-width) {
@@ -15,7 +16,24 @@
 }
 
 .form__fieldset {
-  grid-column: 1 / -1;
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+  }
+}
+
+.form__button {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 21px;
+  width: 100%;
+  padding: 14px;
+
+  @media (min-width: $tablet-width) {
+    justify-self: flex-start;
+    margin-bottom: 0;
+    line-height: normal;
+    padding: 14px 20px;
+  }
 }
 
 .form__legend {
@@ -23,4 +41,9 @@
   font-size: 14px;
   line-height: 16px;
   text-transform: none;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+  }
 }

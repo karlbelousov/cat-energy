@@ -1,3 +1,53 @@
 .field {
+  position: relative;
   color: $special-dark-grey;
+  text-transform: uppercase;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 12px;
+  align-items: center;
+
+  &--icon .field__input {
+    padding-right: 45px;
+  }
+
+  &--comment .field__input {
+    grid-column: 1 / -1;
+  }
+}
+
+.field__input {
+  min-width: 100px;
+  padding: 13px 15px;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $special-dark-grey;
+  border: 1px solid $special-grey-5;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
+}
+
+.field__input::placeholder {
+  color: $special-dark-grey;
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
+}
+
+.field__icon {
+  position: absolute;
+  right: 10px;
 }

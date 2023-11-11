@@ -111,13 +111,13 @@
 }
 
 .promo__button {
-  width: 100%;
   font-size: 14px;
   line-height: 18px;
-  padding: 10px 0;
+  padding: 10px;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1;
     padding: 14px 26px;
-    width: 244px;
   }
 }

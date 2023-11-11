@@ -1,9 +1,41 @@
+.programm-selection {
+  padding-top: 27px;
+  padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding: 64px 67px 72px 70px;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding: 73px 30px 82px;
+  }
+}
+
 .programm-selection__title {
   font-size: 36px;
   line-height: 1;
   font-weight: 400;
+  margin: 0;
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    margin-bottom: 54px;
+  }
+  @media (min-width: $desctop-width) {
+    margin-bottom: 56px;
+  }
 }
 
 .programm-selection__subtitle {
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+    max-width: 400px;
+  }
 }
