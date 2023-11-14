@@ -31,7 +31,7 @@
   &--opened .page-header__toggler {
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-image: url("../img/close.svg");
+    background-image: url("../img/icon/close.svg");
   }
 
   @media (min-width: $tablet-width) {
@@ -74,7 +74,7 @@
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-image: url("../img/burger.svg");
+  background-image: url("../img/icon/burger.svg");
   border: 0;
   cursor: pointer;
 

@@ -1,6 +1,7 @@
 .offer {
   background-color: $special-green;
-  background-image: url("../img/offer-icon.svg"), url("../img/offer-img.png");
+  background-image: url("../img/icon/offer-icon.svg"),
+    url("../img/offer-img.png");
   background-repeat: no-repeat, no-repeat;
   background-size: 80px 80px, cover;
   background-position: center 59px, 50% 50%;

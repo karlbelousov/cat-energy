@@ -104,7 +104,7 @@ img {
 .page-header__nav--opened .page-header__toggler {
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-image: url("../img/close.svg");
+  background-image: url("../img/icon/close.svg");
 }
 @media (min-width: 768px) {
   .page-header__nav {
@@ -150,7 +150,7 @@ img {
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-image: url("../img/burger.svg");
+  background-image: url("../img/icon/burger.svg");
   border: 0;
   cursor: pointer;
 }
@@ -479,7 +479,7 @@ img {
   height: 50px;
   z-index: 5;
   background-repeat: no-repeat;
-  background-image: url("../img/cat-slim.svg");
+  background-image: url("../img/icon/cat-slim.svg");
 }
 @media (min-width: 768px) {
   .catalog-section__item--cat-slim::after {
@@ -508,7 +508,7 @@ img {
   height: 28px;
   z-index: 5;
   background-repeat: no-repeat;
-  background-image: url("../img/cat-pro.svg");
+  background-image: url("../img/icon/cat-pro.svg");
 }
 @media (min-width: 768px) {
   .catalog-section__item--cat-pro::after {
@@ -587,7 +587,7 @@ img {
 }
 .catalog-section__link::after {
   content: "";
-  background-image: url("../img/arrow.svg");
+  background-image: url("../img/icon/arrow.svg");
   background-repeat: no-repeat;
   background-position: 100% 50%;
   width: 32px;
@@ -606,7 +606,7 @@ img {
   }
 }
 .catalog-section__link:hover:after {
-  background-image: url("../img/arrow-hover.svg");
+  background-image: url("../img/icon/arrow-hover.svg");
 }
 .catalog-section__link:active, .catalog-section__link:active:after {
   opacity: 0.3;
@@ -703,16 +703,16 @@ img {
   }
 }
 .process__item--leaf::before {
-  background-image: url("../img/leaf.svg");
+  background-image: url("../img/icon/leaf.svg");
 }
 .process__item--tub::before {
-  background-image: url("../img/tub.svg");
+  background-image: url("../img/icon/tub.svg");
 }
 .process__item--eat::before {
-  background-image: url("../img/eat.svg");
+  background-image: url("../img/icon/eat.svg");
 }
 .process__item--alarm::before {
-  background-image: url("../img/alarm.svg");
+  background-image: url("../img/icon/alarm.svg");
 }
 
 .example {
@@ -1459,7 +1459,7 @@ img {
   text-align: center;
   padding-top: 78px;
   padding-bottom: 25px;
-  background-image: url("../img/plus-small.svg");
+  background-image: url("../img/icon/plus-small.svg");
   background-repeat: no-repeat;
   background-position: center 25px;
 }
@@ -1467,7 +1467,7 @@ img {
   .showe-more {
     padding: 38px;
     padding-top: 190px;
-    background-image: url("../img/plus-large.svg");
+    background-image: url("../img/icon/plus-large.svg");
     background-position: center 100px;
   }
 }
@@ -1730,7 +1730,7 @@ img {
 
 .offer {
   background-color: rgba(104, 183, 56, 0.85);
-  background-image: url("../img/offer-icon.svg"), url("../img/offer-img.png");
+  background-image: url("../img/icon/offer-icon.svg"), url("../img/offer-img.png");
   background-repeat: no-repeat, no-repeat;
   background-size: 80px 80px, cover;
   background-position: center 59px, 50% 50%;
@@ -2003,7 +2003,7 @@ img {
 }
 .control--checkbox .control__input:checked + .control__lead::after {
   content: "";
-  background-image: url("../img/check.svg");
+  background-image: url("../img/icon/check.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }

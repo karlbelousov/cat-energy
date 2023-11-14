@@ -3,14 +3,14 @@
   text-align: center;
   padding-top: 78px;
   padding-bottom: 25px;
-  background-image: url("../img/plus-small.svg");
+  background-image: url("../img/icon/plus-small.svg");
   background-repeat: no-repeat;
   background-position: center 25px;
 
   @media (min-width: $tablet-width) {
     padding: 38px;
     padding-top: 190px;
-    background-image: url("../img/plus-large.svg");
+    background-image: url("../img/icon/plus-large.svg");
     background-position: center 100px;
   }
 }

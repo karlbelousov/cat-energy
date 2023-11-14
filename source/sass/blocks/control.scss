@@ -61,7 +61,7 @@
 
   .control--checkbox &:checked + .control__lead::after {
     content: "";
-    background-image: url("../img/check.svg");
+    background-image: url("../img/icon/check.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
