@@ -186,8 +186,18 @@
     gap: 28px;
   }
 
+  &:hover {
+    opacity: 0.6;
+  }
+
   &:hover:after {
     background-image: url("../img/icon/arrow-hover.svg");
+    opacity: 0.6;
+  }
+
+  &:focus {
+    outline: 1px solid $basic-black;
+    outline-offset: -2px;
   }
 
   &:active,

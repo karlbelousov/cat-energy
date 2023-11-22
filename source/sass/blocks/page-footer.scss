@@ -22,28 +22,27 @@
 }
 
 .page-footer__logo {
-  width: 100%;
-  text-align: center;
-  padding-bottom: 32px;
-  border-bottom: 1px solid $special-grey-3;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
-    border-bottom: 0;
-    width: auto;
+    margin: 0;
+    display: block;
   }
 }
 
 .page-footer__social {
   display: flex;
   gap: 33px;
-  align-items: center;
-  padding: 23px 73px;
+  justify-content: center;
+  padding: 20px 0;
+  border-top: 1px solid $special-grey-3;
   border-bottom: 1px solid $special-grey-3;
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    border-bottom: 0;
+    border: 0;
   }
 }
 

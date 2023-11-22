@@ -16,9 +16,13 @@
   <header class="page__header page-header container">
     <nav class="page-header__nav page-header__nav--index page-header__nav--closed">
       <div class="page-header__bar">
-        <a class="page-header__logo logo" href="#">
-          <img class="logo__image" src="img/logo-image.svg" width="34" height="38" alt="Cat Energy">
-          <img class="logo__sign" src="img/catenergy.svg" width="101" height="19" alt="">
+        <a class="page-header__logo logo">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="logo__image" src="./img/logo-image.svg" width="34" height="38" alt="Cat Energy">
+          </picture>
+          <img class="logo__sign" src="img/logo-sign.svg" width="101" height="19" alt="">
         </a>
         <button class="page-header__toggler" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -42,8 +46,12 @@
       <div class="promo__wrapper container">
         <h1 class="promo__title">Функциональное<br> питание для котов</h1>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
-        <img class="promo__image" src="img/promo-img.png" width="280" height="270"
-          alt="Банка корма для котов со вкусом курицы Cat Energy Pro на 500 грамм">
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/index-can.png, img/index-can@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet.png, img/index-can-tablet@2x.png 2x">
+          <img class="promo__image" src="img/index-can-mobile.png" srcset="img/index-can-mobile@2x.png 2x" width="280"
+            height="270" alt="Банка корма для котов со вкусом курицы Cat Energy Pro на 500 грамм">
+        </picture>
         <a class="promo__button button" href="form.html">Подобрать программу</a>
       </div>
     </section>
@@ -108,10 +116,18 @@
         <div class="example__view">
           <div class="example__images">
             <div class="example__image example__image--before example__image--active">
-              <img src="img/cat-before.png" width="280" height="232" alt="Картинка жирного котика">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/cat-fat.png, img/cat-fat@2x.png 2x">
+                <img src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" width="280" height="232"
+                  alt="Картинка жирного котика">
+              </picture>
             </div>
             <div class="example__image example__image--after">
-              <img src="img/cat-after.png" width="280" height="232" alt="Картинка худого котика">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/cat-skinny.png, img/cat-skinny@2x.png 2x">
+                <img src="img/after-mobile.png" srcset="img/after-mobile@2x.png 2x" width="280" height="232"
+                  alt="Картинка худого котика">
+              </picture>
             </div>
           </div>
           <div class="example__switcher  switcher switcher--before">

@@ -35,14 +35,14 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 24px 0;
+    padding-top: 24px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
   }
 
   @media (min-width: $desctop-width) {
-    padding: 53px 0;
+    padding-top: 53px;
   }
 }
 

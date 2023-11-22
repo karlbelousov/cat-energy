@@ -3,7 +3,30 @@
     opacity: 0.8;
   }
 
+  &:focus {
+    outline: 1px solid $basic-black;
+    outline-offset: -2px;
+  }
+
   &:active {
     opacity: 0.6;
+  }
+}
+
+.logo__image {
+  @media (min-width: $tablet-width) {
+    width: 147px;
+    height: 51px;
+  }
+
+  @media (min-width: $desctop-width) {
+    width: 202px;
+    height: 60px;
+  }
+}
+
+.logo__sign {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

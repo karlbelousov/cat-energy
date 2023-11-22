@@ -17,8 +17,12 @@
     <nav class="page-header__nav page-header__nav--closed">
       <div class="page-header__bar">
         <a class="page-header__logo logo" href="index.html">
-          <img class="logo__image" src="img/logo-image.svg" width="34" height="38" alt="Cat Energy">
-          <img class="logo__sign" src="img/catenergy.svg" width="101" height="19" alt="">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="logo__image" src="./img/logo-image.svg" width="34" height="38" alt="Cat Energy">
+          </picture>
+          <img class="logo__sign" src="img/logo-sign.svg" width="101" height="19" alt="">
         </a>
         <button class="page-header__toggler" type="button">
           <span class="visually-hidden">Открыть меню</span>
