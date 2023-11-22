@@ -3,10 +3,16 @@
     color: $basic-white;
     margin-bottom: 20px;
     background-color: $special-green;
-    background-image: url("../img/promo-small.png"),
+    background-image: url("../img/background/promo-mobile.jpg"),
       linear-gradient($basic-green 0, $basic-green 302px, $basic-white 302px);
     background-repeat: no-repeat;
     background-position: 50% 0;
+
+    @media (min-resolution: 2dppx) {
+      background-size: auto 302px, auto;
+      background-image: url("../img/background/promo-mobile@2x.jpg"),
+        linear-gradient($basic-green 0, $basic-green 302px, $basic-white 302px);
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -22,15 +28,20 @@
       position: absolute;
       z-index: -2;
       content: "";
-      top: -200px;
+      top: -120px;
       right: 0;
       left: 50%;
       bottom: 0;
       background-color: $special-green;
-      background-image: url("../img/promo-large.jpg");
+      background-image: url("../img/background/promo-desctop.jpg");
       background-repeat: no-repeat;
-      background-position: 0% 0%;
+      background-position: 0 100%;
       background-size: cover;
+
+      @media (min-resolution: 2dppx) {
+        background-size: auto 696px;
+        background-image: url("../img/background/promo-desctop@2x.jpg");
+      }
     }
   }
 }
@@ -103,7 +114,7 @@
 
   @media (min-width: $desctop-width) {
     top: 30px;
-    left: 558px;
+    left: 480px;
     bottom: 0;
     width: 552px;
     height: 499px;

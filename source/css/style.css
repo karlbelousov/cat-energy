@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Oswald";
-  src: url("../fonts/oswaldmedium.woff2") format(woff2), url("../fonts/oswaldregular.woff") format(woff);
+  src: url("../fonts/oswaldregular.woff2") format(woff2), url("../fonts/oswaldregular.woff") format(woff);
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -251,9 +251,15 @@ img {
     color: #ffffff;
     margin-bottom: 20px;
     background-color: rgba(104, 183, 56, 0.85);
-    background-image: url("../img/promo-small.png"), linear-gradient(#68b738 0, #68b738 302px, #ffffff 302px);
+    background-image: url("../img/background/promo-mobile.jpg"), linear-gradient(#68b738 0, #68b738 302px, #ffffff 302px);
     background-repeat: no-repeat;
     background-position: 50% 0;
+  }
+}
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
+  .promo {
+    background-size: auto 302px, auto;
+    background-image: url("../img/background/promo-mobile@2x.jpg"), linear-gradient(#68b738 0, #68b738 302px, #ffffff 302px);
   }
 }
 @media (min-width: 768px) {
@@ -271,15 +277,21 @@ img {
     position: absolute;
     z-index: -2;
     content: "";
-    top: -200px;
+    top: -120px;
     right: 0;
     left: 50%;
     bottom: 0;
     background-color: rgba(104, 183, 56, 0.85);
-    background-image: url("../img/promo-large.jpg");
+    background-image: url("../img/background/promo-desctop.jpg");
     background-repeat: no-repeat;
-    background-position: 0% 0%;
+    background-position: 0 100%;
     background-size: cover;
+  }
+}
+@media (min-width: 1300px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1300px) and (min-resolution: 2dppx) {
+  .promo::before {
+    background-size: auto 696px;
+    background-image: url("../img/background/promo-desctop@2x.jpg");
   }
 }
 
@@ -358,7 +370,7 @@ img {
 @media (min-width: 1300px) {
   .promo__image {
     top: 30px;
-    left: 558px;
+    left: 480px;
     bottom: 0;
     width: 552px;
     height: 499px;
@@ -1763,12 +1775,17 @@ img {
 
 .offer {
   background-color: rgba(104, 183, 56, 0.85);
-  background-image: url("../img/icon/offer-icon.svg"), url("../img/offer-img.png");
+  background-image: url("../img/icon/offer-icon.svg"), url("../img/background/offer-bg.jpg");
   background-repeat: no-repeat, no-repeat;
   background-size: 80px 80px, cover;
   background-position: center 59px, 50% 50%;
   color: #ffffff;
   padding: 167px 0 43px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .offer {
+    background-image: url("../img/icon/offer-icon.svg"), url("../img/background/offer-bg@2x.jpg");
+  }
 }
 @media (min-width: 768px) {
   .offer {
