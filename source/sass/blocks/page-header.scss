@@ -90,3 +90,15 @@
     display: none;
   }
 }
+
+.page-header__menu {
+  width: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 530px;
+  }
+
+  @media (min-width: $desctop-width) {
+    width: 600px;
+  }
+}

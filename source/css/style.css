@@ -165,6 +165,20 @@ img {
   }
 }
 
+.page-header__menu {
+  width: auto;
+}
+@media (min-width: 768px) {
+  .page-header__menu {
+    width: 530px;
+  }
+}
+@media (min-width: 1300px) {
+  .page-header__menu {
+    width: 600px;
+  }
+}
+
 .main-nav {
   margin: 0;
   padding: 0;
@@ -174,8 +188,9 @@ img {
   .main-nav {
     display: flex;
     align-items: center;
+    justify-content: end;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 0 20px;
   }
 }
 @media (min-width: 1300px) {
@@ -237,10 +252,6 @@ img {
 }
 .main-nav__link:hover {
   opacity: 0.6;
-}
-.main-nav__link:focus {
-  outline: 1px solid #000000;
-  outline-offset: -2px;
 }
 .main-nav__link:active {
   opacity: 0.3;
@@ -419,10 +430,6 @@ img {
 .button:hover {
   color: rgba(255, 255, 255, 0.6);
 }
-.button:focus {
-  outline: 1px solid #000000;
-  outline-offset: -2px;
-}
 .button:active {
   color: rgba(255, 255, 255, 0.3);
 }
@@ -559,6 +566,7 @@ img {
   margin: 0;
   margin-bottom: 29px;
   padding-left: 91px;
+  padding-right: 30px;
 }
 @media (min-width: 768px) {
   .catalog-section__title {
@@ -633,10 +641,6 @@ img {
 .catalog-section__link:hover:after {
   background-image: url("../img/icon/arrow-hover.svg");
   opacity: 0.6;
-}
-.catalog-section__link:focus {
-  outline: 1px solid #000000;
-  outline-offset: -2px;
 }
 .catalog-section__link:active, .catalog-section__link:active:after {
   opacity: 0.3;
@@ -1120,10 +1124,6 @@ img {
   .switcher__button:hover {
     border-bottom: 1px solid rgba(0, 0, 0, 0.4);
   }
-  .switcher__button:focus {
-    outline: 1px solid #000000;
-    outline-offset: -2px;
-  }
   .switcher__button:active(:not(:focus)) {
     border-bottom: transparent;
   }
@@ -1411,10 +1411,6 @@ img {
 .product-card__link:hover {
   opacity: 0.6;
 }
-.product-card__link:focus {
-  outline: 1px solid #000000;
-  outline-offset: -2px;
-}
 .product-card__link:active {
   opacity: 0.3;
 }
@@ -1451,12 +1447,15 @@ img {
   }
 }
 
-.product-card__img,
-.product-card picture {
+.product-card__images {
   grid-area: img;
   align-self: center;
   justify-self: center;
+}
+
+.product-card__img {
   width: auto;
+  height: auto;
 }
 
 .product-card__list {
@@ -2226,10 +2225,6 @@ img {
 
 .logo:hover {
   opacity: 0.8;
-}
-.logo:focus {
-  outline: 1px solid #000000;
-  outline-offset: -2px;
 }
 .logo:active {
   opacity: 0.6;

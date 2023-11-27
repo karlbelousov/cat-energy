@@ -141,11 +141,6 @@
       border-bottom: 1px solid rgba($basic-black, 0.4);
     }
 
-    &:focus {
-      outline: 1px solid $basic-black;
-      outline-offset: -2px;
-    }
-
     &:active(:not(:focus)) {
       border-bottom: transparent;
     }

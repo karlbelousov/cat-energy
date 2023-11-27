@@ -32,11 +32,6 @@
     color: rgba($basic-white, 0.6);
   }
 
-  &:focus {
-    outline: 1px solid $basic-black;
-    outline-offset: -2px;
-  }
-
   &:active {
     color: rgba($basic-white, 0.3);
   }

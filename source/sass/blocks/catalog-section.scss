@@ -123,6 +123,7 @@
   margin: 0;
   margin-bottom: 29px;
   padding-left: 91px;
+  padding-right: 30px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -193,11 +194,6 @@
   &:hover:after {
     background-image: url("../img/icon/arrow-hover.svg");
     opacity: 0.6;
-  }
-
-  &:focus {
-    outline: 1px solid $basic-black;
-    outline-offset: -2px;
   }
 
   &:active,

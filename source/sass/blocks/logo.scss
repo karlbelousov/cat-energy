@@ -3,11 +3,6 @@
     opacity: 0.8;
   }
 
-  &:focus {
-    outline: 1px solid $basic-black;
-    outline-offset: -2px;
-  }
-
   &:active {
     opacity: 0.6;
   }

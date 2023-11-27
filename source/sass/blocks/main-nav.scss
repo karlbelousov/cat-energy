@@ -4,8 +4,9 @@
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
+    justify-content: end;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 0 20px;
   }
 
   @media (min-width: $desctop-width) {
@@ -66,11 +67,6 @@
 
   &:hover {
     opacity: 0.6;
-  }
-
-  &:focus {
-    outline: 1px solid $basic-black;
-    outline-offset: -2px;
   }
 
   &:active {
