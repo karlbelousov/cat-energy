@@ -4,10 +4,8 @@
   font-size: 16px;
   line-height: normal;
 
-  &:hover {
-    .developer__icon {
-      stroke: $basic-green;
-    }
+  &:hover .developer__icon {
+    stroke: $basic-green;
   }
 
   &:active {

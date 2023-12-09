@@ -23,8 +23,7 @@
 
   @media (min-width: $desctop-width) {
     padding: 15px 0;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 80px;
+    grid-template-columns: 1fr 80px 1fr 80px 1fr;
 
     &:first-child {
       border-top: 1px solid $special-grey;
@@ -76,7 +75,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 0;
-    grid-column: 2 / 3;
+    grid-column: 3 / 4;
   }
 }
 
@@ -103,6 +102,6 @@
   grid-column: 1 / -1;
 
   @media (min-width: $desctop-width) {
-    grid-column: 3 / -1;
+    grid-column: 5 / -1;
   }
 }
