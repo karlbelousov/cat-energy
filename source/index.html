@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/apple-icon-180x180.png">
@@ -162,8 +162,8 @@
             <div class="example__image example__image--before example__image--active">
               <picture>
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-fat.webp, img/cat-fat@2x.webp 2x">
-                <source type="image/webp" srcset="img/before-mobile.webp, img/before-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/cat-fat.png, img/cat-fat@2x.png 2x">
+                <source type="image/webp" srcset="img/before-mobile.webp, img/before-mobile@2x.webp 2x">
                 <img src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" width="280" height="232"
                   alt="Картинка жирного котика">
               </picture>
@@ -172,8 +172,8 @@
               <picture>
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/cat-skinny.webp, img/cat-skinny@2x.webp 2x">
-                <source type="image/webp" srcset="img/after-mobile.webp, img/after-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/cat-skinny.png, img/cat-skinny@2x.png 2x">
+                <source type="image/webp" srcset="img/after-mobile.webp, img/after-mobile@2x.webp 2x">
                 <img src="img/after-mobile.png" srcset="img/after-mobile@2x.png 2x" width="280" height="232"
                   alt="Картинка худого котика">
               </picture>
@@ -182,7 +182,7 @@
           <div class="example__switcher  switcher switcher--before">
             <button class="switcher__button" type="button">Было</button>
             <div class="switcher__toggler"></div>
-            <input class="switcher__bar" type="range" value="50" min="0 max=" 100" step="1">
+            <input class="switcher__bar" type="range" value="50" min="0" max="100" step="1">
             <button class="switcher__button" type="button">Стало</button>
           </div>
         </div>
@@ -251,7 +251,7 @@
     </div>
   </footer>
 
-  <script src="js/app.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
